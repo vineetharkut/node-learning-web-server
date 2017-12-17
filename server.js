@@ -55,6 +55,12 @@ app.get('/about',(req,res) => {
 	});
 });
 
+app.get('/projects',(req,res) => {
+	res.render('project.hbs',{
+		message:'Profolio Page'
+	});
+});
+
 app.get('/bad',(req,res) => {
 	res.send({
 		errorMessage:'404 Not Found'
